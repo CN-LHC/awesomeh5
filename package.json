@@ -1,0 +1,68 @@
+{
+  "name": "interactvideomanager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "granim": "^2.0.0",
+    "infinite-marquee": "^1.0.7",
+    "moment": "^2.29.1",
+    "nprogress": "^0.2.0",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9",
+    "scramblejs": "^1.0.5",
+    "swiper": "^5.3.6",
+    "three": "^0.135.0",
+    "vant": "^2.12.31",
+    "vconsole": "^3.9.4",
+    "video.js": "^7.15.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.3",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "d3": "^7.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "fontfaceobserver": "^2.1.0",
+    "jquery": "^3.6.0",
+    "less": "^4.0.0",
+    "less-loader": "^7.3.0",
+    "qrcodejs2": "0.0.2",
+    "split-type": "^0.2.5",
+    "typed.js": "^2.0.12",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

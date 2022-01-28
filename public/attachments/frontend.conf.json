@@ -1,0 +1,6 @@
+{
+  "PROTOCOL": "http",
+  "API": "192.168.100.43",
+  "API_PORT": ":9888",
+  "LOGIN_METHOD": "APP"
+}

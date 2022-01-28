@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "harmonyRegular";
+  src: url("../../../../assets/fonts/HarmonyOS_Sans_SC_Regular.ttf?t=1638171342335")
+    format("truetype");
+}
+@font-face {
+  font-family: "harmonyBold";
+  src: url("../../../../assets/fonts/HarmonyOS_Sans_SC_Bold.ttf?t=1638171342335") format("truetype");
+}
+
+.hidden {
+  opacity: 0 !important;
+}
+.none {
+  display: none;
+}
+/deep/ .letter {
+  display: inline-block;
+}
+
+.svg_gradient {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: -1;
+}
+
+canvas {
+  display: block;
+}
+#particles-js {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  filter: blur(5px);
+}
+#canvas-basic {
+  position: absolute;
+  z-index: 1;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.audio_holder {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 0;
+  left: -999px;
+  top: -999px;
+}
+
+.cover {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.year{
+  background: url(images/year.png) center center no-repeat;
+  background-size: contain;
+}
+.season1{
+  background: url(images/season1.png) center center no-repeat;
+  background-size: contain;
+}
+.season2{
+  background: url(images/season2.png) center center no-repeat;
+  background-size: contain;
+}
+.season3{
+  background: url(images/season3.png) center center no-repeat;
+  background-size: contain;
+}
+.season4{
+  background: url(images/season4.png) center center no-repeat;
+  background-size: contain;
+}
+.recentHalfYear{
+  background: url(images/recentHalfYear.png) center center no-repeat;
+  background-size: contain;
+}
+.recentYear{
+  background: url(images/recentYear.png) center center no-repeat;
+  background-size: contain;
+}
+
+.pages {
+  height: 100%;
+  display: flex;
+  font-family: "harmonyRegular";
+  flex-direction: column;
+  justify-content: center;
+  background: #0d122a;
+  color: #fff;
+  .page {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    min-height: 100vh;
+  }
+}
+
+.page1 {
+  .title_holder {
+    transition: all 0.7s;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0);
+    font-size: 48px;
+    padding-top: 130px;
+    .title {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 30px);
+      opacity: 0;
+      font-size: 100px;
+      color: #ef622e;
+      font-family: "harmonyBold";
+      white-space: nowrap;
+      transition: all 0.7s;
+      transition-timing-function: ease-in-out;
+      overflow: hidden;
+      span {
+        transition: all 0.3s;
+      }
+    }
+    .title.fade_top_in {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+    .title.moving {
+      color: transparent;
+      background: url("images/2.gif");
+      background-size: cover;
+      background-position: center;
+      -webkit-background-clip: text;
+    }
+    .sub_title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+      color: #ff5517;
+      /deep/ b {
+        display: none;
+        transition: all 1.3s;
+      }
+      /deep/ b.display {
+        display: inline-block !important;
+        opacity: 0 !important;
+      }
+      /deep/ b.show {
+        opacity: 1 !important;
+      }
+    }
+    .sub_title2 {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+      font-size: 100px;
+      font-family: "harmonyBold";
+    }
+    .sub_title3 {
+      display: block;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .title_holder.title_at_corner {
+    top: 4%;
+    left: 30px;
+    transform: translate(0, 0);
+    font-size: 36px;
+    padding-top: 60px;
+    .title.fade_top_in {
+      font-size: 48px;
+      left: 0;
+      transform: translate(0, 0);
+    }
+  }
+
+  .duty_free {
+    position: absolute;
+    left: 0;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    .logos {
+      margin-bottom: 17px;
+      i {
+        display: inline-block;
+        width: 134px;
+        height: 72px;
+        margin: 0 15px;
+      }
+      i.ico_stock_writing {
+        background: url(images/bottom_logo2.png);
+        background-size: 100% auto;
+      }
+      i.ico_deng_ying {
+        background: url(images/bottom_logo1.png);
+        background-size: 100% auto;
+      }
+    }
+  }
+}
+
+.page2 {
+  .c_bar1 {
+    width: 100%;
+    margin-top: 170px;
+    font-size: 20px;
+    /deep/ .date-title {
+      font-size: 64px;
+      font-family: "harmonyBold";
+      fill: rgba(255, 255, 255, 0.8);
+    }
+    /deep/ .domain,
+    /deep/ .tick {
+      display: none;
+    }
+    /deep/ .bar rect {
+      opacity: 1;
+      // fill: url(#linear1);
+    }
+    /deep/ .bar .label {
+      fill: #fff;
+    }
+    /deep/ .bar .value {
+      fill: #fff;
+    }
+  }
+}
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .most_block {
+    text-align: center;
+    font-size: 28px;
+    color: #ffba4d;
+    margin-bottom: 180px;
+    font-family: "harmonyBold";
+    .m_title {
+      font-size: 48px;
+      margin-bottom: 5px;
+      overflow: hidden;
+    }
+    .m_sub_title {
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .m_name {
+      color: #ef622e;
+      font-size: 100px;
+      margin-bottom: 10px;
+      transition: all 0.3s;
+    }
+    .m_desc {
+      color: #ef622e;
+      font-size: 32px;
+      overflow: hidden;
+    }
+  }
+  .most_block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .logo_by {
+    width: 268px;
+    height: 144px;
+    background: url(images/bottom_logo3.png);
+    background-size: 100% auto;
+    margin-bottom: 16px;
+  }
+  .txt_by {
+    font-size: 36px;
+    color: #ef622e;
+    overflow: hidden;
+  }
+  .notify {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10%;
+    font-size: 20px;
+    text-align: center;
+  }
+}

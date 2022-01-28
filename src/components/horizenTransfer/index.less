@@ -1,0 +1,126 @@
+.mask_holder {
+  position: absolute;
+  z-index: 10;
+
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  mask: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDYwMCA2MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI2MDAiPjxwYXRoIGQ9Ik0wIDBoNjAwdjYwMEgwVjB6Ii8+PC9zdmc+);
+  mask-size: contain;
+}
+.bars {
+  position: absolute;
+  z-index: 10;
+
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: stretch;
+  width: 80%;
+  .bar1 {
+    width: 33%;
+    height: 100%;
+    backdrop-filter: brightness(200%);
+  }
+  .bar2 {
+    width: 30%;
+    height: 100%;
+    backdrop-filter: contrast(190%);
+  }
+  .bar3 {
+    width: 33%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+  }
+}
+
+//从左往右
+.bars.left2right {
+  left: 0;
+  transform: translateX(-100%);
+}
+.mask_holder.left2right {
+  left: 0;
+}
+
+//从右往左
+.bars.right2left {
+  right: 0;
+  transform: translateX(100%);
+}
+.mask_holder.right2left {
+  right: 0;
+  & > div {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+}
+
+.filter1 {
+  width: 80%;
+  .bar1 {
+    width: 33%;
+    height: 100%;
+    backdrop-filter: brightness(200%);
+  }
+  .bar2 {
+    width: 30%;
+    height: 100%;
+    backdrop-filter: contrast(190%);
+  }
+  .bar3 {
+    width: 33%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.filter2 {
+  width: 70%;
+  .bar1 {
+    width: 32%;
+    height: 100%;
+    backdrop-filter: contrast(185%);
+  }
+  .bar2 {
+    width: 29%;
+    height: 100%;
+    backdrop-filter: blur(11px) contrast(125%);
+  }
+  .bar3 {
+    width: 32%;
+    height: 100%;
+
+    backdrop-filter: brightness(293%);
+  }
+}
+
+.colors {
+  width: 74%;
+  .bar1 {
+    width: 33%;
+    height: 100%;
+  }
+  .bar2 {
+    width: 33%;
+    height: 100%;
+  }
+  .bar3 {
+    width: 33%;
+    height: 100%;
+  }
+}
+
+// .front_image {
+//   width: 437px;
+//   height: 751px;
+//   background: url(../../assets/images/bg2.png);
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   position: absolute;
+//   z-index: 2;
+// }
